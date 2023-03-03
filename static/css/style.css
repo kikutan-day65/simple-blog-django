@@ -1,7 +1,20 @@
 * {
-    background-color: blue;
+    margin: 20px;
+    width: auto;
+}
+
+body {
+    background-color: grey;
 }
 
 h1 {
-    color: red;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.contents {
+    background-color: aquamarine;
+    padding: 5px;
 }
