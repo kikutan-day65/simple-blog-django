@@ -7,5 +7,9 @@ def index(request):
     posts = Post.objects.all()
     return render(request, 'index.html', {'posts': posts})
 
-def new_post(request):
-    return render(request, 'posts.html')
+def post(request, pk):
+    post = Post.objects.get(id=pk)
+    return render(request, 'post.html', {'post': post})
+
+# def new_post(request):
+#     return render(request, 'posts.html')

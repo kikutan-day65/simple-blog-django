@@ -7,8 +7,10 @@
 
 {% for post in posts reversed %}
     <div class="contents">
-        <h2>{{ post.title }}</h2>
-        <h5>{{ post.created_at }}</h5>
-        <p>{{ post.body | truncatewords:50}}</p>
+        <a href="/post/{{post.id}}" style="text-decoration: none; color: black; ">
+            <h2>{{ post.title }}</h2>
+            <h5>{{ post.created_at }}</h5>
+            <p>{{ post.body | truncatewords:50}}</p>
+        </a>
     </div>
 {% endfor %}
